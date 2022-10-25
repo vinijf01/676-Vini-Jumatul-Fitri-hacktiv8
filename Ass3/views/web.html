@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <style>
+        body{
+            margin: 120px;
+            background-color: #d4dacb;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #9ca9a5;
+            color: white; 
+            border: 2px solid #181818;
+        }
+
+        td {
+            border: 2px solid #181818;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:hover {
+            background-color: #9ee18f;
+        }
+       
+    </style>
+    <title>Assignment</title>
+</head>
+<body>
+
+<h2>Auto Reload | Assignment 3</h2>
+
+<table>
+    <tr>
+        <th>Data</th>
+        <th>Satuan</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Water</td>
+        <td>{{.waterSatuan}}</td>
+        <td>{{.waterStatus}}</td>
+    </tr>
+    <tr>
+        <td>Wind</td>
+        <td>{{.windSatuan}}</td>
+        <td>{{.windStatus}}</td>
+
+    </tr>
+  
+</table>
+
+</body>
+</html>
+
