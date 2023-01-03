@@ -32,13 +32,13 @@ func ValidateToken(c *gin.Context) (interface{}, error) {
 	stringToken := strings.Split(headerToken, " ")[1]
 	token, _ := jwt.Parse(stringToken, func(token *jwt.Token) (interface{}, error) {
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-			return nil, errResponse
+			return nil, errors.New("SALAAAAAAAAAAAAAAA")
 		}
 		return []byte(jwtKey), nil
 	})
 
 	if _, ok := token.Claims.(jwt.MapClaims); !ok && !token.Valid {
-		return nil, errResponse
+		return nil, errors.New("SALAAAAAAAAAAAAAAA")
 	}
 
 	return token.Claims.(jwt.MapClaims), nil

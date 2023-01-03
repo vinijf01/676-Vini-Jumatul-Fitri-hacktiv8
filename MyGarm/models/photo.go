@@ -4,7 +4,7 @@ import "time"
 
 type Photo struct {
 	IdPhoto   uint   `gorm:"primaryKey;autoIncrement" json:"idPhoto"`
-	Title     string `gorm:"not null" json:"title" valid:"required"`
+	Title     string `gorm:"not null;type:varchar(50)" json:"title" valid:"required"`
 	Caption   string
 	PhotoURL  string `gorm:"not null" json:"photo_url" valid:"required"`
 	UserID    uint

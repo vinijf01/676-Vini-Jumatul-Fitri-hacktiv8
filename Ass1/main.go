@@ -29,7 +29,7 @@ func main() {
 		{Nama: "Anne Sagitariyanti ", Alamat: "Bandung", Pekerjaan: "Freelance", Alasan: "Menambahskill di bidang IT"},
 		{Nama: "Annisa Nuri Nabila", Alamat: "Padang", Pekerjaan: "Freelance", Alasan: "ingin mengenal pemrograman golang "},
 		{Nama: "Arnold Julian", Alamat: "Padang", Pekerjaan: "Freelance", Alasan: "ingin mengenal pemrograman golang "},
-		{Nama: "Vini Jumatul Fitri", Alamat: "Medan", Pekerjaan: "Freelance", Alasan: "menambah bahasa pemrograman"},
+		{Nama: "Vini Jumatul Fitri", Alamat: "Padang", Pekerjaan: "Freelance", Alasan: "menambah bahasa pemrograman"},
 	}
 
 	in := os.Args
